@@ -18,6 +18,3 @@
 
 git clone https://github.com/shadowsocks/openwrt-feeds.git package/feeds
 git clone https://github.com/shadowsocks/openwrt-shadowsocks.git package/shadowsocks-libev
-git clone https://github.com/shadowsocks/luci-app-shadowsocks.git package/luci-app-shadowsocks
-git clone https://github.com/kuoruan/openwrt-frp.git package/frp
-git clone https://github.com/fangli/openwrt-vm-tools package/open-vm-tools
