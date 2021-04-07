@@ -15,3 +15,8 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+
+git clone https://github.com/shadowsocks/openwrt-feeds.git package/feeds
+git clone https://github.com/shadowsocks/openwrt-shadowsocks.git package/shadowsocks-libev
+git clone https://github.com/shadowsocks/luci-app-shadowsocks.git package/luci-app-shadowsocks
+git clone https://github.com/kuoruan/openwrt-frp.git package/frp
