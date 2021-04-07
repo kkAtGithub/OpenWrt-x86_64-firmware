@@ -15,14 +15,6 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-sed -i 's#192\.168\.1\.1#192.167.101.1#g'package/base-files/files/bin/config_generate
-
-echo "root:$1$0DPpHGlH$50IFcWtXTfBMnEv9Su5rK0:18615:0:99999:7:::" > package/base-files/files/etc/shadow
-echo "daemon:*:0:0:99999:7:::" >> package/base-files/files/etc/shadow
-echo "ftp:*:0:0:99999:7:::" >> package/base-files/files/etc/shadow
-echo "network:*:0:0:99999:7:::" >> package/base-files/files/etc/shadow
-echo "nobody:*:0:0:99999:7:::" >> package/base-files/files/etc/shadow
-echo "dnsmasq:x:0:0:99999:7:::" >> package/base-files/files/etc/shadow
 
 git clone https://github.com/shadowsocks/openwrt-feeds.git package/feeds
 git clone https://github.com/shadowsocks/openwrt-shadowsocks.git package/shadowsocks-libev
