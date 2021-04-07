@@ -20,10 +20,6 @@ echo "network:*:0:0:99999:7:::" >> package/base-files/files/etc/shadow
 echo "nobody:*:0:0:99999:7:::" >> package/base-files/files/etc/shadow
 echo "dnsmasq:x:0:0:99999:7:::" >> package/base-files/files/etc/shadow
 
-pushd package/luci-app-shadowsocks/tools/po2lmo
-make && sudo make install
-popd
-
 mkdir package/luci-app-openclash
 cd package/luci-app-openclash
 git init
