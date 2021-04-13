@@ -62,5 +62,5 @@ jobs:
         echo "${{ secrets.RCLONE_CONFIG }}" > ./rclone.conf
         wget https://raw.githubusercontent.com/kkAtGithub/shell/main/rclone.sh
         chmod +x rclone.sh
-        ./rclone.sh copy . "/GITHUB_ACTION/OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}" ./rclone.conf
+        ./rclone.sh copy . "/GITHUB_ACTION/OpenWrt_firmware"
         
