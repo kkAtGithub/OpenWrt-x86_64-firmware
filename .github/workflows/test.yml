@@ -57,6 +57,7 @@ jobs:
       id: rclone
       if: env.UPLOAD_RCLONE == 'true' && !cancelled()
       run: |
+        mkdir -p ~/.config/rclone/
         echo "test" > ./test.txt
         curl https://rclone.org/install.sh | sudo bash
         echo "${{ secrets.RCLONE_CONFIG }}" > ~/.config/rclone/rclone.conf
