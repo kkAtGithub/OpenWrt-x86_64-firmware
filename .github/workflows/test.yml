@@ -57,10 +57,10 @@ jobs:
       id: rclone
       if: env.UPLOAD_RCLONE == 'true' && !cancelled()
       run: |
-        echo "test" > "${{ env.FIRMWARE }}"/test.txt
+        echo "test" > ./test.txt
         curl https://rclone.org/install.sh | sudo bash
         echo "${{ secrets.RCLONE_CONFIG }}" > ./rclone.conf
         wget https://raw.githubusercontent.com/kkAtGithub/shell/main/rclone.sh
         chmod +x rclone.sh
-        ./rclone.sh copy "${{ env.FIRMWARE }}" "/GITHUB_ACTION/OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}" ./rclone.conf
+        ./rclone.sh copy . "/GITHUB_ACTION/OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}" ./rclone.conf
         
