@@ -48,7 +48,7 @@ jobs:
       run: |
         sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
         sudo -E apt-get -qq update
-        sudo -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-1804)
+        sudo -E apt-get -qq install wget
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
@@ -61,6 +61,7 @@ jobs:
         echo "test" > ./test.txt
         curl https://rclone.org/install.sh | sudo bash
         echo "${{ secrets.RCLONE_CONFIG }}" > ~/.config/rclone/rclone.conf
+        rclone config show
         wget https://raw.githubusercontent.com/kkAtGithub/shell/main/rclone.sh
         chmod +x rclone.sh
         ./rclone.sh copy . "/GITHUB_ACTION/OpenWrt_firmware"
