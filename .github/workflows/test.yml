@@ -59,7 +59,7 @@ jobs:
       run: |
         echo "test" > ./test.txt
         curl https://rclone.org/install.sh | sudo bash
-        echo "${{ secrets.RCLONE_CONFIG }}" > ./rclone.conf
+        echo "${{ secrets.RCLONE_CONFIG }}" > ~/.config/rclone/rclone.conf
         wget https://raw.githubusercontent.com/kkAtGithub/shell/main/rclone.sh
         chmod +x rclone.sh
         ./rclone.sh copy . "/GITHUB_ACTION/OpenWrt_firmware"
