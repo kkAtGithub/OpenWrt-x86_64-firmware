@@ -19,4 +19,4 @@
 git clone https://github.com/shadowsocks/openwrt-feeds.git package/feeds
 git clone https://github.com/shadowsocks/openwrt-shadowsocks.git package/shadowsocks-libev
 mkdir -p /workdir/openwrt/dl
-cp $GITHUB_WORKSPACE/pcre-8.45.tar.gz /workdir/openwrt/dl
+cp $GITHUB_WORKSPACE/pcre/* /workdir/openwrt/dl
