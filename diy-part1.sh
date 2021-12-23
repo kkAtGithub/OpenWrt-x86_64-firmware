@@ -18,5 +18,6 @@
 
 git clone https://github.com/shadowsocks/openwrt-feeds.git package/feeds
 git clone https://github.com/shadowsocks/openwrt-shadowsocks.git package/shadowsocks-libev
+git clone https://github.com/kuoruan/openwrt-frp.git package/frp
 mkdir -p /workdir/openwrt/dl
 cp $GITHUB_WORKSPACE/pcre/* /workdir/openwrt/dl
