@@ -33,3 +33,9 @@ git branch --set-upstream-to=origin/master master
 pushd luci-app-openclash/tools/po2lmo
 make && sudo make install
 popd
+
+
+cd ..
+git clone https://github.com/jerrykuku/luci-theme-argon.git  
+make menuconfig
+make -j1 V=s  
