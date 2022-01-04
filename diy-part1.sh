@@ -19,5 +19,6 @@
 git clone https://github.com/shadowsocks/openwrt-feeds.git package/feeds
 git clone https://github.com/shadowsocks/openwrt-shadowsocks.git package/shadowsocks-libev
 git clone https://github.com/kuoruan/openwrt-frp.git package/frp
+git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 mkdir -p /workdir/openwrt/dl
 cp $GITHUB_WORKSPACE/pcre/* /workdir/openwrt/dl
