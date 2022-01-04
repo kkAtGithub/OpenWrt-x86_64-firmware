@@ -32,10 +32,4 @@ git branch --set-upstream-to=origin/master master
 # 编译 po2lmo (如果有po2lmo可跳过)
 pushd luci-app-openclash/tools/po2lmo
 make && sudo make install
-popd
-
-
-cd ..
-git clone https://github.com/jerrykuku/luci-theme-argon.git  
-make menuconfig
-make -j1 V=s  
+popd 
