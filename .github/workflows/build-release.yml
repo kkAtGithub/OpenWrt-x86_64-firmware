@@ -25,7 +25,7 @@ on:
 
 env:
   RELEASE_URL: https://codeload.github.com/openwrt/openwrt/tar.gz/refs/tags
-  RELEASE_TAG: v22.03.3
+  RELEASE_TAG: v22.03.5
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
