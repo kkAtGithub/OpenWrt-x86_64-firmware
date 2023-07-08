@@ -12,8 +12,12 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.101.1/g' package/base-files/files/bin/config_generate
-
 sed -i 's#root::0:0:99999:7:::#root:$1$ZxIx/sXb$/dUqWNOoYUIqaBMwR7AWb0:19028:0:99999:7:::#g' package/base-files/files/etc/shadow
+
+rm -rf feeds/packages/net/v2ray-geodata
+
+git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
 mkdir package/luci-app-openclash
 cd package/luci-app-openclash
