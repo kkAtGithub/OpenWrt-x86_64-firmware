@@ -18,8 +18,8 @@
 
 rm -rf feeds/packages/net/v2ray-geodata
 
-# git clone https://github.com/sbwml/luci-app-mosdns.git -b v5 package/mosdns
-# git clone https://github.com/sbwml/v2ray-geodata.git package/v2ray-geodata
+git clone https://github.com/sbwml/luci-app-mosdns.git -b v5 package/mosdns
+git clone https://github.com/sbwml/v2ray-geodata.git package/v2ray-geodata
 git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/luci-app-unblockneteasemusic
 git clone https://github.com/zzsj0928/luci-app-pushbot.git package/luci-app-pushbot
