@@ -24,5 +24,5 @@ git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-a
 #git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/luci-app-unblockneteasemusic
 #git clone https://github.com/zzsj0928/luci-app-pushbot.git package/luci-app-pushbot
 #git clone https://github.com/sirpdboy/luci-app-ddns-go.git package/ddns-go
-#git clone https://github.com/siwind/openwrt-vlmcsd.git package/vlmcsd
-#git clone https://github.com/Huangjoe123/luci-app-eqos.git package/eqos
+git clone https://github.com/siwind/openwrt-vlmcsd.git package/vlmcsd
+git clone https://github.com/Huangjoe123/luci-app-eqos.git package/eqos
